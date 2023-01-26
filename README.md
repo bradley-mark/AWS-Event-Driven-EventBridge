@@ -315,6 +315,8 @@ Use this sample data to test your rule
 ```
 Using the Event Generator, send the following *Order Notification* events from the source *com.aws.orders:*
 
+![image](https://user-images.githubusercontent.com/91480603/214963099-b7cd558c-fac2-49c0-9da7-3cac58db332c.png)
+
 
 
 # EventBridge using Step Functions
