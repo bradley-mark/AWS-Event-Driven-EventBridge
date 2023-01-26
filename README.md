@@ -187,22 +187,6 @@ Next steps to create an Orders event bus rule to match an event with a com.aws.o
 Events in Amazon EventBridge are represented as JSON objects and have the following envelope signature:
 
 ```YAML
-
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
 {
   "version": "0",
   "id": "6a7e8feb-b491-4cf7-a9f1-bf3703467718",
@@ -220,6 +204,8 @@ Events in Amazon EventBridge are represented as JSON objects and have the follow
   }
 }
 ```
+
+
 
 
 
