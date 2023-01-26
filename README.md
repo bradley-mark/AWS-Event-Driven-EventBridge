@@ -54,11 +54,27 @@ A simple way to test the rules you create for your event bus is to use Amazon Cl
 3. Click **Create rule**
 4. **Define rule detail**
 
-Add OrdersDevRule as the **Name** of the rule
+Add *OrdersDevRule* as the **Name** of the rule
 
-Add Catchall rule for development purposes for **Description**
+Add *Catchall rule for development purposes* for **Description**
 
-Select Rule with an event pattern for the **Rule type**
+Select *Rule with an event pattern* for the **Rule type**
 
+![image](https://user-images.githubusercontent.com/91480603/214864217-1c8c48c5-49c6-4574-aace-657f8f33e7ac.png)
 
+5. Select **Next**
+6. Under **Build event pattern** **Event source** choose **Other**
+
+![image](https://user-images.githubusercontent.com/91480603/214864589-a1dd2e67-c911-4df8-b7fc-9591bdf24ebe.png)
+
+7. Under **Event pattern** - **Insert** copy/past JSON to catch all events from com.aws.orders:
+
+```YAML
+{
+   "source": ["com.aws.orders"]
+}
+```
+
+8. Select **NEXT**
+9. 
 
