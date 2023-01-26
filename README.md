@@ -112,7 +112,26 @@ Once the stack creation has been completed navigate to the stack Outputs tab. He
 5. This will open the Event Generator website and pre-populate the modal dialog box with values for a Cognito User Pool and Cognito Identity Pool provisioned in your AWS account. Click **Configure Cognito User Pool** to view the sign-in page
 6. On the Sign In page add your the **CognitoUsername** and **CognitoPassword** from the CloudFormation Stack Output page
 7. Click **Configure**
-8. 
+
+![image](https://user-images.githubusercontent.com/91480603/214889273-5a9fac09-5ef0-49a6-9fd6-e175394f75b0.png)
+
+AWS Account ID is prepopulated
+
+![image](https://user-images.githubusercontent.com/91480603/214889535-bfb8d8a9-cfa5-4dd1-96f4-883462034cdb.png)
+
+- **AWS Region** should be to the region in which you are running the workshop
+- **Event Bus** selected to *Orders*
+- **Source** should be *com.aws.orders*
+- **Detail** Type add *Order Notification*
+- JSON payload for the Detail Template should be:
+
+```YAML
+{
+   "category": "lab-supplies",
+   "value": 415,
+   "location": "eu-west"
+}
+```
 
 
 
