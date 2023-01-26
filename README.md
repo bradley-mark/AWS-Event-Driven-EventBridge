@@ -174,6 +174,10 @@ Sample event for reference
 }
 ```
 
+# Working with EventBridge rules
+
+![image](https://user-images.githubusercontent.com/91480603/214896547-582bc171-3d9d-4ad6-8122-3de6f4ce2534.png)
+
 
 
 
