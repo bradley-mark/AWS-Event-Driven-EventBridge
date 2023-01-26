@@ -273,6 +273,47 @@ The sample event above, like most events, has a nested structure. Suppose you wa
 
 **3. Configure an EventBridge rule to target the EventBridge API Destination**
 
+1. In the navigation pane, choose **Buses** and select **Rules**
+2. From the Event bus dropdown, select the **Orders** Event bus
+3. Click **Create rule**
+4. On the **Define rule detail** page
+
+- Enter *OrdersEventsRule* as the **Name** of the rule
+- Enter *Send com.aws.orders source events to API Destination* for **Description**
+5. Select **Next**
+6. Under **Build event pattern**
+
+- Choose **Other** for your **Event source**
+- Choose **Enter my own** copy and paste the following:
+
+```YAML
+{
+    "source": [
+        "com.aws.orders"
+    ]
+}
+```
+![image](https://user-images.githubusercontent.com/91480603/214961102-3048b477-b5bf-412e-82fc-91b1f31dd7f3.png)
+
+7. Select **Next** to specify your target
+8. **Select target(s)** 
+- Select **EventBridge API destination** as the target type.
+- Select *api-destination* from the list of **existing API destinations**
+- All other defaults
+
+![image](https://user-images.githubusercontent.com/91480603/214961634-1b2bc7b9-046f-4779-834a-c9095f88c1b5.png)
+
+9. Click **Skip to Review and create**
+10. Click **Create rule**
+
+**4. Send test Orders event**
+
+Use this sample data to test your rule
+
+```YAML
+{ "category": "lab-supplies", "value": 415, "location": "us-east" }
+```
+Using the Event Generator, send the following *Order Notification* events from the source *com.aws.orders:*
 
 
 
