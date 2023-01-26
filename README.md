@@ -110,6 +110,9 @@ Once the stack creation has been completed navigate to the stack Outputs tab. He
 
 4. Right-click the url in the **EventGeneratorConfigurationUrl** output, opening a new browser window
 5. This will open the Event Generator website and pre-populate the modal dialog box with values for a Cognito User Pool and Cognito Identity Pool provisioned in your AWS account. Click **Configure Cognito User Pool** to view the sign-in page
+6. On the Sign In page add your the **CognitoUsername** and **CognitoPassword** from the CloudFormation Stack Output page
+7. Click **Configure**
+8. 
 
 
 
