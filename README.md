@@ -55,7 +55,9 @@ A simple way to test the rules you create for your event bus is to use Amazon Cl
 4. **Define rule detail**
 
 Add OrdersDevRule as the **Name** of the rule
+
 Add Catchall rule for development purposes for **Description**
+
 Select Rule with an event pattern for the **Rule type**
 
 
