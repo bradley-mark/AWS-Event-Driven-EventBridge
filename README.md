@@ -315,9 +315,26 @@ Use this sample data to test your rule
 ```
 Using the Event Generator, send the following *Order Notification* events from the source *com.aws.orders:*
 
-![image](https://user-images.githubusercontent.com/91480603/214963099-b7cd558c-fac2-49c0-9da7-3cac58db332c.png)
+![image](https://user-images.githubusercontent.com/91480603/214965375-38f7bcfe-76b6-4638-8d25-c36e4780c037.png)
 
+![image](https://user-images.githubusercontent.com/91480603/214965215-c7f1e45a-2e63-4bd2-95b6-77d2653bf3f6.png)
 
+**5. Verify API Destination**
+
+1. Open the CloudWatch console **https://console.aws.amazon.com/cloudwatch/home?**
+2. In the navigation pane, choose **Logs** and **Log groups**
+3. Select the Log group with an **API-Gateway-Execution-Logs** prefix
+
+![image](https://user-images.githubusercontent.com/91480603/214965953-423b3926-2f9c-4cea-80a1-ac405ab2e2ab.png)
+
+4. Select the **Log streams**
+
+![image](https://user-images.githubusercontent.com/91480603/214966215-2ee2c474-40cc-4d87-8d87-20bc0ab5b884.png)
+
+5. Toggle the log event to verify the basic authorization was successful and the API responds with a 200 status.
+
+![image](https://user-images.githubusercontent.com/91480603/214966414-4f55b659-0efd-45af-81a5-5ad6df0f3bda.png)
+![image](https://user-images.githubusercontent.com/91480603/214966511-3da41737-2630-46bd-aa74-54547148113a.png)
 
 # EventBridge using Step Functions
 
