@@ -138,7 +138,43 @@ AWS Account ID is prepopulated
 
 ![image](https://user-images.githubusercontent.com/91480603/214892130-8f85b5ee-99b5-43c3-8e23-cee9e2f46c34.png)
 
-4. 
+4. Open the console for CloudWatch **https://console.aws.amazon.com/cloudwatch/home**
+
+5. Choose **Log groups** in the left navigation and select the **/aws/events/orders** log group
+
+![image](https://user-images.githubusercontent.com/91480603/214894969-6e66b8ed-390c-4ea9-abaa-82faf6e79378.png)
+
+6. Select the **Log stream**
+
+![image](https://user-images.githubusercontent.com/91480603/214895482-2f3d5249-41a0-4b38-82d2-d279ec7e9f69.png)
+
+7. Toggle the log event to verify that you received the event
+
+![image](https://user-images.githubusercontent.com/91480603/214895792-7cf1bec9-c834-40a0-a489-6cc6458792bf.png)
+
+**Review event structure**
+
+Sample event for reference
+
+```YAML
+{
+    "version": "0",
+    "id": "c04cc8c1-283c-425e-8cf6-878bbc67a628",
+    "detail-type": "Order Notification",
+    "source": "com.aws.orders",
+    "account": "111111111111",
+    "time": "2020-02-20T23:10:29Z",
+    "region": "us-west-2",
+    "resources": [],
+    "detail": {
+        "category": "lab-supplies",
+        "value": 415,
+        "location": "eu-west"
+    }
+}
+```
+
+
 
 
 
