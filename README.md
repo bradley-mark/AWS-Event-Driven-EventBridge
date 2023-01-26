@@ -67,7 +67,7 @@ Select *Rule with an event pattern* for the **Rule type**
 
 ![image](https://user-images.githubusercontent.com/91480603/214864589-a1dd2e67-c911-4df8-b7fc-9591bdf24ebe.png)
 
-7. Under **Event pattern** - **Insert** copy/past JSON to catch all events from com.aws.orders:
+7. Under **Event pattern** - **Insert** to catch all events from com.aws.orders:
 
 ```YAML
 {
@@ -76,5 +76,16 @@ Select *Rule with an event pattern* for the **Rule type**
 ```
 
 8. Select **NEXT**
-9. 
+9. **Select target(s)** Target type **AWS service** Select a target dropdown, select **CloudWatch log group**
+10. Log Group: name **/aws/events/*orders***
+
+![image](https://user-images.githubusercontent.com/91480603/214866717-59c56e02-b7d9-494c-acb8-948ef3a77bc6.png)
+
+11. Click **Skip to Review and create**
+12. Click **Create rule**
+
+**Test the rule**
+
+
+
 
