@@ -236,3 +236,9 @@ The sample event above, like most events, has a nested structure. Suppose you wa
 - The **values being matched follow JSON rules**: Strings enclosed in quotes, numbers, and the unquoted keywords true, false, and null.
 - **Number matching is at the string representation level.** For example, 300, 300.0, and 3.0e2 are not considered equal.
 
+# EventBridge using API Gateway
+
+# EventBridge using Step Functions
+
+# EventBridge using SNS
+
