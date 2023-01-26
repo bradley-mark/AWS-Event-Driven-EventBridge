@@ -35,7 +35,28 @@ We will create a custom EventBridge event bus, **Orders**, and an EventBridge ru
 ![image](https://user-images.githubusercontent.com/91480603/214860597-bda27217-af94-4af8-be91-f09febde28e2.png)
 
 5. Name the event bus *Orders*
-6. Leave **Eevnt archive** and **Schema discovery** disabled, **Resource-based policy** <blank>
+6. Leave **Event archive** and **Schema discovery** disabled, **Resource-based policy** blank
+7. Click **Create**
+
+![image](https://user-images.githubusercontent.com/91480603/214861568-19efda9f-e83a-406c-91e2-cc705b3fe50e.png)
+
+![image](https://user-images.githubusercontent.com/91480603/214861901-8387ae67-ddb7-4f17-8bcd-bf2555518d84.png)
+
+**Setup CloudWatch target (for dev work)**
+
+A simple way to test the rules you create for your event bus is to use Amazon CloudWatch as a target. We will create a rule for the Orders bus that will act as a "catch-all" for every event passed to the bus, irrespective of source.
   
-  
+1. In the navigation pane, choose **Rules**
+2. From the **Select event bus** dropdown, select **Orders**
+
+![image](https://user-images.githubusercontent.com/91480603/214862921-4090d088-ef7d-4599-887a-8da034b2abf0.png)
+
+3. Click **Create rule**
+4. **Define rule detail**
+
+Add OrdersDevRule as the **Name** of the rule
+Add Catchall rule for development purposes for **Description**
+Select Rule with an event pattern for the **Rule type**
+
+
 
