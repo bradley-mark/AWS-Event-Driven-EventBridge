@@ -238,7 +238,31 @@ The sample event above, like most events, has a nested structure. Suppose you wa
 
 # EventBridge using API Gateway
 
+**Identify the API URL**
+1. Open the CloudFormation console: **https://console.aws.amazon.com/cloudformation**
+2. View the **Outputs** tab and **Apiurl**
+
+![image](https://user-images.githubusercontent.com/91480603/214955099-0c833723-8dfa-485c-b64c-38648aa35826.png)
+
+**Configure the EventBridge API Destination with basic auth security**
+1. 
+
 # EventBridge using Step Functions
 
 # EventBridge using SNS
+1. Open the EventBridge console **https://console.aws.amazon.com/events**
+2. In the navigation pane, choose **Integration** and select **API destinations**
+3. Choose **Create API destination**
 
+![image](https://user-images.githubusercontent.com/91480603/214955757-275d4087-4619-498a-8efb-6fa822abb527.png)
+
+4. **Create API destination** detail
+
+--Enter api-destination as the Name
+Enter the API URL identified in Step 1 as the API destination endpoint
+Select POST as the HTTP method
+Select Create a new connection for the Connection
+Enter basic-auth-connection as the Connection name
+Select Basic (Username/Password) as the Authorization type
+Enter myUsername as the Username
+Enter myPassword as the Password
