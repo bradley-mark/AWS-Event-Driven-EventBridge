@@ -267,3 +267,9 @@ The sample event above, like most events, has a nested structure. Suppose you wa
 - Enter *myUsername* as the **Username**
 - Enter *myPassword* as the **Password**
 
+![image](https://user-images.githubusercontent.com/91480603/214957590-56c6066f-256c-42de-b399-1fd803994ba7.png)
+![image](https://user-images.githubusercontent.com/91480603/214957791-68c8eb70-3ce5-4dfc-9dfd-e94bdb409f1d.png)
+![image](https://user-images.githubusercontent.com/91480603/214957847-d9bedd72-64d3-46d9-9673-31aa329e4740.png)
+
+
+
