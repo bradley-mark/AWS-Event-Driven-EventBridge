@@ -258,11 +258,12 @@ The sample event above, like most events, has a nested structure. Suppose you wa
 
 4. **Create API destination** detail
 
--Enter api-destination as the Name
--Enter the API URL identified in Step 1 as the API destination endpoint
--Select POST as the HTTP method
--Select Create a new connection for the Connection
--Enter basic-auth-connection as the Connection name
--Select Basic (Username/Password) as the Authorization type
--Enter myUsername as the Username
--Enter myPassword as the Password
+- Enter *api-destination* as the **Name**
+- Enter the **API URL** identified in Step 1 as the **API destination endpoint**
+- Select POST as the **HTTP method**
+- Select **Create a new connection** for the **Connection**
+- Enter *basic-auth-connection* as the **Connection name**
+- Select **Basic (Username/Password)** as the **Authorization type**
+- Enter *myUsername* as the **Username**
+- Enter *myPassword* as the **Password**
+
