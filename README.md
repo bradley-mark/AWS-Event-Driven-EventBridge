@@ -84,7 +84,7 @@ Select *Rule with an event pattern* for the **Rule type**
 11. Click **Skip to Review and create**
 12. Click **Create rule**
 
-**Test the rule**
+**Configure the Event Generator**
 
 Use an AWS Cognito account with access to send test events to your Amazon SNS topics or Amazon EventBridge event buses
 
@@ -95,8 +95,6 @@ Template URL **https://aws-event-driven-architecture-workshop-assets.s3.amazonaw
 Stack Description: **Master stack: AWS Event-driven Architectures Workshop**
 
 ![image](https://user-images.githubusercontent.com/91480603/214880680-03d837c9-79eb-47ac-b0f8-59a146d970c0.png)
-
-**Configure the Event Generator**
 
 Once the stack creation has been completed navigate to the stack Outputs tab. Here you will find all the values necessary to configure the Event Generator to work with your account.
 
@@ -119,6 +117,10 @@ AWS Account ID is prepopulated
 
 ![image](https://user-images.githubusercontent.com/91480603/214889535-bfb8d8a9-cfa5-4dd1-96f4-883462034cdb.png)
 
+**Test the rule**
+
+1. Open Event Generator **https://event-generator.awsworkshops.io/#/**
+2. Check and enter following:
 - **AWS Region** should be to the region in which you are running the workshop
 - **Event Bus** - *Orders*
 - **Source** - *com.aws.orders*
@@ -132,9 +134,11 @@ AWS Account ID is prepopulated
    "location": "eu-west"
 }
 ```
+3. Click **PUBLISH EVENT**
 
+![image](https://user-images.githubusercontent.com/91480603/214892130-8f85b5ee-99b5-43c3-8e23-cee9e2f46c34.png)
 
-
+4. 
 
 
 
