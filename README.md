@@ -104,7 +104,14 @@ Once the stack creation has been completed navigate to the stack Outputs tab. He
 2. **CognitoPassword** - your password for logging into the Event Generator
 3. **CognitoUsername** - your user name (defaults to "user")
 
-![image](https://user-images.githubusercontent.com/91480603/214881929-37630baf-aca2-49c6-a816-3ea04e290a5a.png)
+![image](https://user-images.githubusercontent.com/91480603/214882436-f7658d7d-4963-4d59-b35f-4ba3d6dbf9fd.png)
+
+![image](https://user-images.githubusercontent.com/91480603/214882526-7ad29886-6abb-4f9c-834b-f27485b9b97e.png)
+
+4. Right-click the url in the **EventGeneratorConfigurationUrl** output, opening a new browser window
+5. This will open the Event Generator website and pre-populate the modal dialog box with values for a Cognito User Pool and Cognito Identity Pool provisioned in your AWS account. Click **Configure Cognito User Pool** to view the sign-in page
+
+
 
 
 
