@@ -178,6 +178,48 @@ Sample event for reference
 
 ![image](https://user-images.githubusercontent.com/91480603/214896547-582bc171-3d9d-4ad6-8122-3de6f4ce2534.png)
 
+Rules match incoming events and routes them to targets for processing. A single rule can route to multiple targets, all of which are processed in parallel. Rules aren't processed in a particular order. A rule can customize the JSON sent to the target, by passing only certain parts or by overwriting it with a constant.
+
+Next steps to create an Orders event bus rule to match an event with a com.aws.orders source and to send the event to an Amazon API Gateway endpoint, invoke a AWS Step Function, and send events to an Amazon Simple Notification Service (Amazon SNS) topic.
+
+**Rule matching basics**
+
+Events in Amazon EventBridge are represented as JSON objects and have the following envelope signature:
+
+```YAML
+
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+{
+  "version": "0",
+  "id": "6a7e8feb-b491-4cf7-a9f1-bf3703467718",
+  "detail-type": "EC2 Instance State-change Notification",
+  "source": "aws.ec2",
+  "account": "111111111111",
+  "time": "2017-12-22T18:43:48Z",
+  "region": "us-west-1",
+  "resources": [
+    "arn:aws:ec2:us-west-1:123456789012:instance/ i-1234567890abcdef0"
+  ],
+  "detail": {
+    "instance-id": " i-1234567890abcdef0",
+    "state": "terminated"
+  }
+}
+```
 
 
 
