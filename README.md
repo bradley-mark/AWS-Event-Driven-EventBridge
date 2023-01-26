@@ -35,4 +35,7 @@ We will create a custom EventBridge event bus, **Orders**, and an EventBridge ru
 ![image](https://user-images.githubusercontent.com/91480603/214860597-bda27217-af94-4af8-be91-f09febde28e2.png)
 
 5. Name the event bus *Orders*
+6. Leave **Eevnt archive** and **Schema discovery** disabled, **Resource-based policy** <blank>
+  
+  
 
