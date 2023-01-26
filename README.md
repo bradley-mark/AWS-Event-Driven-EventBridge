@@ -120,10 +120,10 @@ AWS Account ID is prepopulated
 ![image](https://user-images.githubusercontent.com/91480603/214889535-bfb8d8a9-cfa5-4dd1-96f4-883462034cdb.png)
 
 - **AWS Region** should be to the region in which you are running the workshop
-- **Event Bus** selected to *Orders*
-- **Source** should be *com.aws.orders*
-- **Detail** Type add *Order Notification*
-- JSON payload for the Detail Template should be:
+- **Event Bus** - *Orders*
+- **Source** - *com.aws.orders*
+- **Detail** - *Order Notification*
+- **Detail Template**:
 
 ```YAML
 {
