@@ -86,6 +86,10 @@ Select *Rule with an event pattern* for the **Rule type**
 
 **Test the rule**
 
+Use an AWS Cognito account with access to send test events to your Amazon SNS topics or Amazon EventBridge event buses
+
+This requires an AWS Account ID for Cognito
+
 
 
 
