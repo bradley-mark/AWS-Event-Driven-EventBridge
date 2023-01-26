@@ -17,3 +17,17 @@ EventBridge simplifies the process of building event-driven architectures. With 
 - **Targets** - A target processes events. Targets can include Amazon EC2 instances, Lambda functions, Kinesis streams, Amazon ECS tasks, Step Functions state machines, Amazon SNS topics, Amazon SQS queues, and built-in targets. A target receives events in JSON format.
 
 - **Event buses** - An event bus receives events. When you create a rule, you associate it with a specific event bus, and the rule is matched only to events received by that event bus. Your account has one default event bus, which receives events from AWS services. You can create custom event buses to receive events from your custom applications. You can also create partner event buses to receive events from SaaS partner applications.
+
+# Setup
+
+![image](https://user-images.githubusercontent.com/91480603/214859142-d3a4c8b5-fd63-4e6b-92e4-7797e5534e16.png)
+
+We will create a custom EventBridge event bus, **Orders**, and an EventBridge rule, **OrderDevRule**, which matches all events sent to the Orders event bus and sends the events to a CloudWatch Logs log group, **/aws/events/orders**.
+
+**Event bus and targets**
+
+**Create a custom event bus**
+
+1. Open the EventBridge console **https://console.aws.amazon.com/events**
+2. In the navigation pane, choose **Events** and select **Event buses**
+3. 
