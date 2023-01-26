@@ -88,7 +88,25 @@ Select *Rule with an event pattern* for the **Rule type**
 
 Use an AWS Cognito account with access to send test events to your Amazon SNS topics or Amazon EventBridge event buses
 
-This requires an AWS Account ID for Cognito
+**Note:** This requires an AWS Account ID for Cognito
+
+**Building event-driven architectures on AWS > Getting started > Self Hosted** Launch the AWS CloudFormation template
+Template URL **https://aws-event-driven-architecture-workshop-assets.s3.amazonaws.com/master-v2.yaml**
+Stack Description: **Master stack: AWS Event-driven Architectures Workshop**
+
+![image](https://user-images.githubusercontent.com/91480603/214880680-03d837c9-79eb-47ac-b0f8-59a146d970c0.png)
+
+**Configure the Event Generator**
+
+Once the stack creation has been completed navigate to the stack Outputs tab. Here you will find all the values necessary to configure the Event Generator to work with your account.
+
+1. **EventGeneratorConfigurationUrl** - this url will pre-populate the Event Generator with all the settings you need.
+
+2. **CognitoPassword** - your password for logging into the Event Generator
+
+3. **CognitoUsername** - your user name (defaults to "user")
+
+![image](https://user-images.githubusercontent.com/91480603/214881929-37630baf-aca2-49c6-a816-3ea04e290a5a.png)
 
 
 
