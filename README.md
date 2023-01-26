@@ -30,4 +30,9 @@ We will create a custom EventBridge event bus, **Orders**, and an EventBridge ru
 
 1. Open the EventBridge console **https://console.aws.amazon.com/events**
 2. In the navigation pane, choose **Events** and select **Event buses**
-3. 
+3. Choose **Create event bus**
+4. 
+![image](https://user-images.githubusercontent.com/91480603/214860597-bda27217-af94-4af8-be91-f09febde28e2.png)
+
+5. Name the event bus *Orders*
+
