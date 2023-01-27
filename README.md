@@ -385,7 +385,7 @@ Process **only orders from locations in the EU** (eu-west or eu-east) using a **
 
 If the event sent to the **Orders** event bus matches the pattern in your rule, then the event will be sent to the **OrderProcessing** Step Functions state machine for execution.
 
-1. Open the Step Functions console **https://console.aws.amazon.com/states/home**
+1. Open the **Step Functions** console **https://console.aws.amazon.com/states/home**
 2. Navigate and select **State machines**
 3. Enter *OrderProcessing* in the **Search for state machines** box and verify the state machine execution has succeeded
 
@@ -393,3 +393,52 @@ If the event sent to the **Orders** event bus matches the pattern in your rule, 
 
 
 # EventBridge using SNS
+
+** 1. Implement an EventBridge rule to target SNS**
+
+1. Open the EventBridge console **https://console.aws.amazon.com/events**
+2. Click **Create rule** with the Name **USLabSupplyRule**
+3. **Rule with an event pattern** **Next** 
+5. Event source **Other**
+6. Define an **Event pattern** to match events with a detail location in **eu-west** or **eu-east**
+
+```YAML
+{
+  "source": ["com.aws.orders"],
+  "detail-type": ["Order Notification"],
+  "detail": {
+    "category": ["lab-supplies"],
+    "value": [300],
+    "location": ["us-east"]
+  }
+}
+```
+7. Target the **Orders** SNS topic
+
+![image](https://user-images.githubusercontent.com/91480603/215202787-2ad5c350-64f2-42ab-8990-3570321feb95.png)
+
+8. Click **Skip to Review and create** **Create rule**
+
+**2. Send test US Orders events**
+
+1. Open Event Generator **https://event-generator.awsworkshops.io/#/**
+2. Send the following *Order Notification* events from the *source com.aws.orders*:
+
+```YAML
+{ "category": "lab-supplies", "value": 415, "location": "us-east" }
+```
+
+```YAML
+{ "category": "office-supplies", "value": 1050, "location": "us-west", "signature": [ "John Doe" ] }
+```
+
+**3. Verify SNS topic**
+
+If the event sent to the Orders event bus matches the pattern in your rule, then the event will be sent to the Orders SQS Queue (via Orders SNS Topic.
+
+1. Open the **SQS** console **https://console.aws.amazon.com/states/home**
+2. Navigate and select **Orders** queue
+3. Select the **Send and receive messages** button
+4. Select **Poll for Messages** and verify the first message was delivered and the second was not
+
+
