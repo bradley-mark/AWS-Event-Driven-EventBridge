@@ -357,11 +357,10 @@ Process **only orders from locations in the EU** (eu-west or eu-east) using a **
 5. Event source **Other**
 6. Define an **Event pattern** to match events with a detail location in **eu-west** or **eu-east**
 
+```YAML
 {
   "location": ["eu-west"]
 }
-```YAML
-
 ```
 7. Target the **OrderProcessing** Step Functions state machine
 
