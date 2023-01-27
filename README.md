@@ -448,4 +448,5 @@ If the event sent to the Orders event bus matches the pattern in your rule, then
 
 **First message confirmed**
 
+![image](https://user-images.githubusercontent.com/91480603/215205063-1e0b2a91-c60e-4c23-830b-1ea7d5ce127e.png)
 
