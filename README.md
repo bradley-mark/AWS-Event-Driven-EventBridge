@@ -389,4 +389,7 @@ If the event sent to the **Orders** event bus matches the pattern in your rule, 
 2. Navigate and select **State machines**
 3. Enter *OrderProcessing* in the **Search for state machines** box and verify the state machine execution has succeeded
 
+![image](https://user-images.githubusercontent.com/91480603/215188212-525b91e0-f4c1-46c7-ab5f-d753efe473a5.png)
+
+
 # EventBridge using SNS
