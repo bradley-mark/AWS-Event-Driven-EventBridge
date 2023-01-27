@@ -236,6 +236,7 @@ The sample event above, like most events, has a nested structure. Suppose you wa
 - The **values being matched follow JSON rules**: Strings enclosed in quotes, numbers, and the unquoted keywords true, false, and null.
 - **Number matching is at the string representation level.** For example, 300, 300.0, and 3.0e2 are not considered equal.
 
+
 # EventBridge using API Gateway
 
 **GOAL** 
@@ -339,6 +340,7 @@ Using the Event Generator, send the following *Order Notification* events from t
 
 ![image](https://user-images.githubusercontent.com/91480603/214966414-4f55b659-0efd-45af-81a5-5ad6df0f3bda.png)
 ![image](https://user-images.githubusercontent.com/91480603/214966511-3da41737-2630-46bd-aa74-54547148113a.png)
+
 
 # EventBridge using Step Functions
 
