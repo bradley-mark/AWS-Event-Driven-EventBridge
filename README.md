@@ -342,4 +342,42 @@ Using the Event Generator, send the following *Order Notification* events from t
 
 # EventBridge using Step Functions
 
+**GOAL**
+
+Process **only orders from locations in the EU** (eu-west or eu-east) using a **AWS Step Functions** target (**OrderProcessing**). In this use case, we are demonstrating how a Step Function execution can be triggered to process orders as they are published by the Orders bus.
+
+**1. Implement an EventBridge rule to target Step Functions**
+
+1. Open the EventBridge console **https://console.aws.amazon.com/events**
+2. Navigate to **Rules** and select Event Bus **Orders**
+3. Click **Create rule** with the Name **EUOrdersRule**
+4. **Rule with an event pattern** **Next** 
+5. Event source **Other**
+6. Define an **Event pattern** to match events with a detail location in **eu-west** or **eu-east**
+
+```YAML
+{
+    "version": "0",
+    "id": "6e6b1f6d-48f8-5dff-c2d2-a6f22c2e0086",
+    "detail-type": "Order Notification",
+    "source": "com.aws.orders",
+    "account": "111111111111",
+    "time": "2020-02-23T15:35:41Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+        "category": "office-supplies",
+        "value": 300,
+        "location": "eu-west"
+    }
+}
+```
+7. Target the **OrderProcessing** Step Functions state machine
+
+![image](https://user-images.githubusercontent.com/91480603/215144166-7d071433-a3c9-41e2-a6e4-cb740e65961f.png)
+
+8. Click **Skip to Review and create** **Create rule**
+
+
+
 # EventBridge using SNS
