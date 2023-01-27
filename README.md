@@ -359,7 +359,13 @@ Process **only orders from locations in the EU** (eu-west or eu-east) using a **
 
 ```YAML
 {
-  "location": ["eu-west"]
+  "source": ["com.aws.orders"],
+  "detail-type": ["Order Notification"],
+  "detail": {
+    "category": ["office-supplies"],
+    "value": [300],
+    "location": ["eu-west"]
+  }
 }
 ```
 7. Target the **OrderProcessing** Step Functions state machine
@@ -372,28 +378,9 @@ Process **only orders from locations in the EU** (eu-west or eu-east) using a **
 2. Send the following *Order Notification* events from the *source com.aws.orders*:
 
 ```YAML
-{
-  "source": ["com.aws.orders"],
-  "detail-type": ["Order Notification"],
-  "detail": {
-    "category": ["office-supplies"],
-    "value": [300],
-    "location": ["eu-west"]
-  }
-}
+{ "category": "office-supplies", "value": 300, "location": "eu-west" }
 ```
 
-```YAML
-{
-  "source": ["com.aws.orders"],
-  "detail-type": ["Order Notification"],
-  "detail": {
-    "category": ["tech-supplies"],
-    "value": [3000],
-    "location": ["eu-east"]
-  }
-}
-```
 **3. Verify Step Functions workflow execution**
 
 If the event sent to the **Orders** event bus matches the pattern in your rule, then the event will be sent to the **OrderProcessing** Step Functions state machine for execution.
