@@ -439,6 +439,13 @@ If the event sent to the Orders event bus matches the pattern in your rule, then
 1. Open the **SQS** console **https://console.aws.amazon.com/sqs/v2/home**
 2. Navigate and select **Orders** queue
 3. Select the **Send and receive messages** button
-4. Select **Poll for Messages** and verify the first message was delivered and the second was not
+
+![image](https://user-images.githubusercontent.com/91480603/215204475-56e9ee24-b964-44e0-9752-6543f07251ab.png)
+
+5. Select **Poll for Messages** and verify the first message was delivered and the second was not
+
+![image](https://user-images.githubusercontent.com/91480603/215204607-0bb104f2-cd01-41eb-902a-3e9f7aebbe21.png)
+
+**First message confirmed**
 
 
