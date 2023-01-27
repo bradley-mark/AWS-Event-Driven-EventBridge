@@ -359,24 +359,12 @@ Process **only orders from locations in the EU** (eu-west or eu-east) using a **
 
 ```YAML
 {
-    "version": "0",
-    "id": "6e6b1f6d-48f8-5dff-c2d2-a6f22c2e0086",
-    "detail-type": "Order Notification",
-    "source": "com.aws.orders",
-    "account": "111111111111",
-    "time": "2020-02-23T15:35:41Z",
-    "region": "us-east-1",
-    "resources": [],
-    "detail": {
-        "category": "office-supplies",
-        "value": 300,
-        "location": "eu-west"
-    }
+  "category": [ "office-supplies" ],
+  "value": 300,
+  "location": [ "eu-west" ]
 }
 ```
 7. Target the **OrderProcessing** Step Functions state machine
-
-![image](https://user-images.githubusercontent.com/91480603/215144166-7d071433-a3c9-41e2-a6e4-cb740e65961f.png)
 
 8. Click **Skip to Review and create** **Create rule**
 
