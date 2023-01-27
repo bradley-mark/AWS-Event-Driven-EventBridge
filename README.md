@@ -359,9 +359,7 @@ Process **only orders from locations in the EU** (eu-west or eu-east) using a **
 
 ```YAML
 {
-  "category": [ "office-supplies" ],
-  "value": 300,
-  "location": [ "eu-west" ]
+  "source": ["com.aws.orders"]
 }
 ```
 7. Target the **OrderProcessing** Step Functions state machine
