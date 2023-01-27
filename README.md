@@ -436,7 +436,7 @@ If the event sent to the **Orders** event bus matches the pattern in your rule, 
 
 If the event sent to the Orders event bus matches the pattern in your rule, then the event will be sent to the Orders SQS Queue (via Orders SNS Topic.
 
-1. Open the **SQS** console **https://console.aws.amazon.com/states/home**
+1. Open the **SQS** console **https://console.aws.amazon.com/sqs/v2/home**
 2. Navigate and select **Orders** queue
 3. Select the **Send and receive messages** button
 4. Select **Poll for Messages** and verify the first message was delivered and the second was not
