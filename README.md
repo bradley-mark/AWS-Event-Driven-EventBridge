@@ -373,17 +373,25 @@ Process **only orders from locations in the EU** (eu-west or eu-east) using a **
 
 ```YAML
 {
-  "category": "office-supplies",
-  "value": 300,
-  "location": "eu-west"
+  "source": ["com.aws.orders"],
+  "detail-type": ["Order Notification"],
+  "detail": {
+    "category": ["office-supplies"],
+    "value": [300],
+    "location": ["eu-west"]
+  }
 }
 ```
 
 ```YAML
 {
-  "category": "tech-supplies",
-  "value": 3000,
-  "location": "eu-east"
+  "source": ["com.aws.orders"],
+  "detail-type": ["Order Notification"],
+  "detail": {
+    "category": ["tech-supplies"],
+    "value": [3000],
+    "location": ["eu-east"]
+  }
 }
 ```
 **3. Verify Step Functions workflow execution**
