@@ -372,11 +372,19 @@ Process **only orders from locations in the EU** (eu-west or eu-east) using a **
 2. Send the following *Order Notification* events from the *source com.aws.orders*:
 
 ```YAML
-{ "category": "office-supplies", "value": 300, "location": "eu-west" }
+{
+  "category": "office-supplies",
+  "value": 300,
+  "location": "eu-west"
+}
 ```
 
 ```YAML
-{ "category": "tech-supplies", "value": 3000, "location": "eu-east" }
+{
+  "category": "tech-supplies",
+  "value": 3000,
+  "location": "eu-east"
+}
 ```
 **3. Verify Step Functions workflow execution**
 
