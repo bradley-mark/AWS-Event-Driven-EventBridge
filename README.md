@@ -394,7 +394,7 @@ If the event sent to the **Orders** event bus matches the pattern in your rule, 
 
 # EventBridge using SNS
 
-** 1. Implement an EventBridge rule to target SNS**
+**1. Implement an EventBridge rule to target SNS**
 
 1. Open the EventBridge console **https://console.aws.amazon.com/events**
 2. Click **Create rule** with the Name **USLabSupplyRule**
