@@ -240,7 +240,7 @@ The sample event above, like most events, has a nested structure. Suppose you wa
 
 **GOAL** 
 
-Process all events for source com.aws.orders via an Amazon EventBridge API Destination. In this use case we are demonstrating how you might integrate EventBridge with third party public API endpoints using an outbound webhook with Basic Auth configured.
+Process all events for source **com.aws.orders** via an **Amazon EventBridge API Destination**. In this use case we are demonstrating how you might integrate EventBridge with third party public API endpoints using an outbound webhook with Basic Auth configured.
 
 **1. Identify the API URL**
 1. Open the CloudFormation console: **https://console.aws.amazon.com/cloudformation**
