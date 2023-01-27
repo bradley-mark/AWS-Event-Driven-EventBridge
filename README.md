@@ -378,6 +378,24 @@ Process **only orders from locations in the EU** (eu-west or eu-east) using a **
 
 8. Click **Skip to Review and create** **Create rule**
 
+**2. Send test EU Orders events**
 
+1. Open Event Generator **https://event-generator.awsworkshops.io/#/**
+2. Send the following *Order Notification* events from the *source com.aws.orders*:
+
+```YAML
+{ "category": "office-supplies", "value": 300, "location": "eu-west" }
+```
+
+```YAML
+{ "category": "tech-supplies", "value": 3000, "location": "eu-east" }
+```
+**3. Verify Step Functions workflow execution**
+
+If the event sent to the **Orders** event bus matches the pattern in your rule, then the event will be sent to the **OrderProcessing** Step Functions state machine for execution.
+
+1. Open the Step Functions console **https://console.aws.amazon.com/states/home**
+2. Navigate and select **State machines**
+3. Enter *OrderProcessing* in the **Search for state machines** box and verify the state machine execution has succeeded
 
 # EventBridge using SNS
