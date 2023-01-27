@@ -378,6 +378,10 @@ Process **only orders from locations in the EU** (eu-west or eu-east) using a **
 
 8. Click **Skip to Review and create** **Create rule**
 
+**ERROR**
+
+![image](https://user-images.githubusercontent.com/91480603/215154019-60d16360-4289-4573-be92-07adc0c62a42.png)
+
 **2. Send test EU Orders events**
 
 1. Open Event Generator **https://event-generator.awsworkshops.io/#/**
