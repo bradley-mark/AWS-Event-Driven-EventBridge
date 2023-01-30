@@ -398,6 +398,8 @@ If the event sent to the **Orders** event bus matches the pattern in your rule, 
 
 # EventBridge using SNS
 
+![image](https://user-images.githubusercontent.com/91480603/215528335-8562695b-f698-4bde-b975-8a869bae223b.png)
+
 **1. Implement an EventBridge rule to target SNS**
 
 1. Open the EventBridge console **https://console.aws.amazon.com/events**
