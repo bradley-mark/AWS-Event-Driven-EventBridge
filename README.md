@@ -4,7 +4,7 @@
 
 ![image](https://user-images.githubusercontent.com/91480603/214858136-0a52e3d8-a00c-4e4b-bc9e-64208371f309.png)
 
-EventBridge is a serverless service that uses events to connect application components together, making it easier for you to build scalable event-driven applications.
+**EventBridge is a serverless service** that uses events to connect application components together, making it easier for you to build scalable event-driven applications.
 
 EventBridge delivers a stream of real-time data from your own applications, Software-as-a-Service (SaaS) applications, and AWS services and routes that data to targets such as AWS Lambda.
 
