@@ -91,7 +91,9 @@ Use an AWS Cognito account with access to send test events to your Amazon SNS to
 **Note:** This requires an AWS Account ID for Cognito
 
 **Building event-driven architectures on AWS > Getting started > Self Hosted** Launch the AWS CloudFormation template
+
 Template URL **https://aws-event-driven-architecture-workshop-assets.s3.amazonaws.com/master-v2.yaml**
+
 Stack Description: **Master stack: AWS Event-driven Architectures Workshop**
 
 ![image](https://user-images.githubusercontent.com/91480603/214880680-03d837c9-79eb-47ac-b0f8-59a146d970c0.png)
