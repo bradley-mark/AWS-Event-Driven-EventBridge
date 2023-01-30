@@ -98,7 +98,8 @@ Stack Description: **Master stack: AWS Event-driven Architectures Workshop**
 
 ![image](https://user-images.githubusercontent.com/91480603/214880680-03d837c9-79eb-47ac-b0f8-59a146d970c0.png)
 
-Once the stack creation has been completed navigate to the stack Outputs tab. Here you will find all the values necessary to configure the Event Generator to work with your account.
+Once the stack creation has been completed navigate to the stack Outputs tab. 
+Here you will find all the values necessary to configure the Event Generator to work with your account.
 
 1. **EventGeneratorConfigurationUrl** - this url will pre-populate the Event Generator with all the settings you need.
 2. **CognitoPassword** - your password for logging into the Event Generator
