@@ -350,6 +350,8 @@ Using the Event Generator, send the following *Order Notification* events from t
 
 Process **only orders from locations in the EU** (eu-west or eu-east) using a **AWS Step Functions** target (**OrderProcessing**). In this use case, we are demonstrating how a Step Function execution can be triggered to process orders as they are published by the Orders bus.
 
+![image](https://user-images.githubusercontent.com/91480603/215527996-883e62d6-5dca-477c-9978-ee000942798a.png)
+
 **1. Implement an EventBridge rule to target Step Functions**
 
 1. Open the EventBridge console **https://console.aws.amazon.com/events**
