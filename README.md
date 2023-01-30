@@ -398,7 +398,7 @@ If the event sent to the **Orders** event bus matches the pattern in your rule, 
 
 # EventBridge using SNS
 
-![image](https://user-images.githubusercontent.com/91480603/215528335-8562695b-f698-4bde-b975-8a869bae223b.png)
+![image](https://user-images.githubusercontent.com/91480603/215528518-26cc749e-2a8b-405b-b5c9-e05ab81c5db2.png)
 
 **1. Implement an EventBridge rule to target SNS**
 
